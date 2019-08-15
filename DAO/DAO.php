@@ -23,13 +23,11 @@
 		abstract function metodoModificar($statement, $parametro1, $parametro2);
 		abstract function metodoBuscarPor($resultSet);
 
-		abstract function queryListarDetalle();
 		abstract function queryAgregarDetalle();	
 		abstract function queryEliminarDetalle();				
 		abstract function queryModificarDetalle();
 		abstract function queryBuscarDetallePor($parametro, $filtro);
 
-		abstract function metodoListarDetalle($resultSet);
 		abstract function metodoAgregarDetalle($statement, $parametro1, $parametro2);
 		abstract function metodoEliminarDetalle($statement, $parametro);	
 		abstract function metodoModificarDetalle($statement, $parametro);
@@ -148,29 +146,6 @@
 			}
 		}
 
-
-
-
-		/*
-		* Metodo para listar todos los elementos de tabla "Prestamo"
- 		* @access: public
- 		* @return: array() de objetos "Prestamo" 
- 		*/
-		public function listarDetalle() {
-			$arrayDeObjetos = array();
-			$pdo = $this->conectar();
-			try {
-				$resultSet = $pdo->query($this->queryListarDetalle());
-				$arrayDeObjetos = $this->metodoListarDetalle($resultSet);
-				$this->desconectar();
-				return $arrayDeObjetos;
-			} catch (Exception $e) {
-				LogErro::guardarLog("Sql.log", $e->getMessage(), $e->getCode(), $e->getFile(), $e->getLine());
-			}finally{
-				$this->desconectar();
-			}
-		}
-	
 		/*
 		* Metodo para modificar registrosa de la tabla "Prestamo" segun "id"
 		* @access: public

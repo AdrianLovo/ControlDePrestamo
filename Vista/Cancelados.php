@@ -11,18 +11,13 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	
-
 
 </head>
-
 
 <body>
 
     <!-- Menu Principal -->
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-        <a class="navbar-brand" href="index.php">Menu</a>
-
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -35,15 +30,11 @@
                 <a class="nav-link" href="index.php">Listado Pendientes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Listado Cancelados</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Todas Cuotas Pendientes</a>
+                <a class="nav-link" href="Cancelados.php">Listado Cancelados</a>
               </li>
             </ul>
         </div> 
     </nav>
-
 
     <div class="row justify-content-between" style="margin-top: 50px">
     	<div class="col-md-10 offset-md-1">
@@ -64,7 +55,6 @@
 
         </div>        
     </div>
-
 
     <!-- DataTable JS-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>

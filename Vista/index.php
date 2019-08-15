@@ -12,8 +12,6 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	
-
-
 </head>
 
 
@@ -21,8 +19,7 @@
 
     <!-- Menu Principal -->
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-        <a class="navbar-brand" href="#">Menu</a>
-
+        
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -36,9 +33,6 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="Cancelados.php">Listado Cancelados</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">Todas Cuotas Pendientes</a>
               </li>
             </ul>
         </div> 
@@ -118,7 +112,6 @@
           </div>
         </div>
         
-
     </div>
 
 
@@ -131,7 +124,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <!-- Controlador -->
-    <script type="text/javascript" src="../Controller/ControllerPrestamo.js"></script>
+    <script type="text/javascript" src="../Controller/ControllerIndex.js"></script>
     <script type="text/javascript" src="../Resources/alertify/alertify.min.js"></script>
 	    
 </body>

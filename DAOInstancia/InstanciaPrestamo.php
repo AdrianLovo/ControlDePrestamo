@@ -13,7 +13,7 @@
 	$funcion = isset($_POST['Funcion']) ? $_POST['Funcion'] : null;
 
 	//metodo = listar
-	$opcion = isset($_POST['opcion']) ? $_POST['opcion'] : null;
+	$opcion = isset($_POST['opcion']) ? $_POST['opcion'] : null;								
 	
 	//Metodo = agregar
 	$nombrePersona = isset($_POST['nombrePersona']) ? $_POST['nombrePersona'] : null;
@@ -34,9 +34,6 @@
 	$montoPendiente= isset($_POST['montoPendiente']) ? $_POST['montoPendiente'] : null;
 
 
-	
-
-	
 	switch ($funcion) {
 		case 1: listar($opcion);
 			break;
@@ -44,13 +41,12 @@
 				agregar($prestamo);
 			break;	
 		case 3:	eliminar($idPrestamo);
-			break;
+			break;			
 		case 7: modificarDetalle($idPrestamo, $idCuotaPrestamo, $montoPendiente);
 			break;		
 		case 8: buscarDetalle($parametro, $filtro);
 			break;
 	}
-
 
 	function listar($opcion){		
 		$datosTodos = array();

@@ -88,22 +88,6 @@
 
 
 		//**************************************************************************METODOS DET**************************************************************************
-		public function queryListarDetalle(){
-			$query = "SELECT * FROM prestamo.cuotaPrestamo";
-			return $query;
-		}
-
-		public function metodoListarDetalle($resultSet){
-			$arrayDeObjetos = array();
-			if(!empty($resultSet)){
-				foreach($resultSet as $fila){
-					$a = new CuotaPrestamo($fila[0], $fila[1], $fila[2], $fila[3]);
-					array_push($arrayDeObjetos, $a);
-				}	
-			}	
-			return $arrayDeObjetos;
-		}
-
 		public function queryAgregarDetalle(){
 			$query = "INSERT INTO prestamo.cuotaPrestamo (idPrestamo, numeroCuota) VALUES(?, ?)";			
 			return $query;

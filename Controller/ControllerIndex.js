@@ -54,7 +54,7 @@ function listar(){
 
 function buscarDetalle($parametro){
 	var detalle;
-	datos = {"Funcion": 8, "parametro": $parametro, "filtro": "idPrestamo"};
+	datos = {"Funcion": 8, "parametro": $parametro, "filtro": "idPrestamo", "opcion": 1};
     $.ajax({
 		url: "../DAOInstancia/InstanciaPrestamo.php",
 		type: "POST",
