@@ -77,10 +77,10 @@ function mostrarDetalle(fila, detalle, filaNum){
 	var cadena = "";
 	var total = 0;
 	var menorCancelada = 0;
-
+	
 	for (var i = 0; i < detalle.length; i++) {
 		total = parseInt(total) + parseInt(fila.cuota.replace("$",""));
-		var montoPendiente = parseInt(fila.montoPendiente.replace("$","")) - (parseInt(fila.cuota.replace("$","")) * (i+1));
+		var montoPendiente = ( parseInt(fila.cantidadCuotas.replace("$","")) * parseInt(fila.cuota.replace("$","")) )- (parseInt(fila.cuota.replace("$","")) * (i+1));
 		 
 		if(detalle[i].fechaCancelada != null){
 			cadena = cadena + "<tr>"+
@@ -203,7 +203,6 @@ function modificarDetalle(idPrestamo, idCuotaPrestamo, montoPendiente, idSiguien
     	$("#TablaDatos").DataTable().cell(filaNum, 6).data("$"+montoPendiente);
     }
 }
-
 
 //Funciones Auxiliares
 function validaNumericos(event) {
