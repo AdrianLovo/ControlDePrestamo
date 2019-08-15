@@ -1,0 +1,31 @@
+td.details-control {
+    background: url('../img/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    background: url('../img/details_close.png') no-repeat center center;
+}
+
+td.details-delete {
+    background: url('../img/delete.png') no-repeat center center;
+    cursor: pointer;
+}
+
+.TablaBordeCuatro{
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.TablaBordeLados{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.Ocultar{
+    display: none;
+}
