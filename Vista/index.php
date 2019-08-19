@@ -33,7 +33,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="Cancelados.php">Listado Cancelados</a>
-              </li>
+              </li>              
             </ul>
         </div> 
     </nav>
