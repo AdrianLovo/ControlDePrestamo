@@ -47,7 +47,7 @@
 				$this->desconectar();
 				return $arrayDeObjetos;
 			} catch (Exception $e) {
-				LogErro::guardarLog("Sql.log", $e->getMessage(), $e->getCode(), $e->getFile(), $e->getLine());
+				LogError::guardarLog("Sql.log", $e->getMessage(), $e->getCode(), $e->getFile(), $e->getLine());
 			}finally{
 				$this->desconectar();
 			}

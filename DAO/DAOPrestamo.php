@@ -26,7 +26,7 @@
 			$arrayDeObjetos = array();
 			if(!empty($resultSet)){
 				foreach($resultSet as $fila){
-					$a = new Prestamo($fila[0], $fila[1], $fila[2], $fila[3], $fila[4], $fila[5], $fila[6]);
+					$a = new Prestamo($fila[0], utf8_encode($fila[1]), $fila[2], $fila[3], $fila[4], $fila[5], $fila[6]);
 					array_push($arrayDeObjetos, $a);
 				}	
 			}	

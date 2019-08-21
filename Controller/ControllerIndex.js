@@ -59,7 +59,7 @@ function buscarDetalle($parametro){
 		url: "../DAOInstancia/InstanciaPrestamo.php",
 		type: "POST",
 		data: datos,
-		async: true,
+		async: false,
 		success: function (respuesta) {
 			detalle = JSON.parse(respuesta);
 			if(detalle.length == 0){
@@ -129,7 +129,7 @@ function agregar(){
 			url: "../DAOInstancia/InstanciaPrestamo.php",
 			type: "POST",
 			data: datos,
-			async: true,
+			async: false,
 			success: function (respuesta) {
 				idPrestamo = respuesta;
 				if(idPrestamo != 0){
@@ -159,9 +159,9 @@ function eliminar(){
 			url: "../DAOInstancia/InstanciaPrestamo.php",
 			type: "POST",
 			data: datos,
-			async: true,
+			async: false,
 			success: function (respuesta) {
-				if(respuesta != 0){
+				if(respuesta != "0"){
 					alertify.success('Registro Eliminado');        	
 					bandera = true;
 				}
@@ -185,7 +185,7 @@ function modificarDetalle(idPrestamo, idCuotaPrestamo, montoPendiente, idSiguien
 		url: "../DAOInstancia/InstanciaPrestamo.php",
 		type: "POST",
 		data: datos,
-		async: true,
+		async: false,
 		success: function (respuesta) {
 			if(respuesta != 0){
 				alertify.success('Cuota Procesada');        	
