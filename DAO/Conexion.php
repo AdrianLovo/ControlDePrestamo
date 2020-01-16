@@ -13,8 +13,8 @@
 		//Atributos
 		private $host = "localhost";	//host
 		private $bd = "prestamo";		//base de datos
-		private $user = "prestamo";		//usuario
-		private $pass = "";				//pasword
+		private $user = "root";			//usuario
+		private $pass = "root";			//pasword
 		private $pdo;					//objeto conexion
 
 		//Metodos

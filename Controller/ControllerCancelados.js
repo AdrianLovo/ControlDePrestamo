@@ -67,7 +67,7 @@ function buscarDetalle($parametro){
 		error: function() {
 			alertify.error('Error al mostrar Detalle de Deuda');        	
     	}
-	});	
+	});		
 	return detalle;
 }
 
@@ -75,6 +75,8 @@ function mostrarDetalle(fila, detalle, filaNum){
 	var cadena = "";
 	var total = 0;
 	var menorCancelada = 0;
+
+
 
 	for (var i = 0; i < detalle.length; i++) {
 		total = parseInt(total) + parseInt(fila.cuota.replace("$",""));
@@ -93,4 +95,6 @@ function mostrarDetalle(fila, detalle, filaNum){
 }
 
 
-
+function convertirFecha(fecha){
+	
+}

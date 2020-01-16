@@ -17,7 +17,8 @@ function listar(){
             {"data": "montoPendiente"},
             {"className": 'details-delete', "orderable": false, "data": null, "defaultContent": ''},
         ],
-        "order": [[1, 'asc']]
+        "order": [[1, 'asc']],
+        "pageLength": 20
     });
      
     // Add event listener for opening and closing details

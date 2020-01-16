@@ -14,7 +14,6 @@
 	
 </head>
 
-
 <body>
 
     <!-- Menu Principal -->
@@ -50,7 +49,7 @@
                         <th>Total Prestamo</th>
                         <th>Cuota</th>
                         <th>Cantidad Cuotas</th>
-                        <th>Fecha Prestamo</th>  
+                        <th>Fecha Prestamo (YYYY-MM-DD)</th>  
                         <th>Pendiente</th>                      
                         <th></th>
                     </tr>

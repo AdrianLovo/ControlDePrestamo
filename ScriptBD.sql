@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS prestamo(
     PRIMARY KEY (idPrestamo)
 );
 
-CREATE TABLE IF NOT EXISTS cuotaPrestamo(
+CREATE TABLE IF NOT EXISTS cuotaprestamo(
     idCuotaPrestamo INT NOT NULL AUTO_INCREMENT COMMENT 'Clave primaria',
     idPrestamo INT,
     numeroCuota INT,

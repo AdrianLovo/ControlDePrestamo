@@ -89,7 +89,7 @@
 
 		//**************************************************************************METODOS DET**************************************************************************
 		public function queryAgregarDetalle(){
-			$query = "INSERT INTO prestamo.cuotaPrestamo (idPrestamo, numeroCuota) VALUES(?, ?)";			
+			$query = "INSERT INTO prestamo.cuotaprestamo (idPrestamo, numeroCuota) VALUES(?, ?)";			
 			return $query;
 		}
 
@@ -98,7 +98,7 @@
 		}
 
 		public function queryEliminarDetalle(){
-			$query = "DELETE FROM prestamo.cuotaPrestamo WHERE idPrestamo = ?";
+			$query = "DELETE FROM prestamo.cuotaprestamo WHERE idPrestamo = ?";
 			return $query;
 		}
 
@@ -109,7 +109,7 @@
 		}
 
 		public function queryModificarDetalle(){
-			$query = "UPDATE prestamo.cuotaPrestamo SET fechaCancelada=CURDATE() WHERE idCuotaPrestamo=?";
+			$query = "UPDATE prestamo.cuotaprestamo SET fechaCancelada=CURDATE() WHERE idCuotaPrestamo=?";
 			return $query;
 		}
 
@@ -123,9 +123,9 @@
 			$valor = $parametro->getValor($filtro);
 			$tipo = $parametro->getTipo($filtro);
 			if($tipo == 1){
-				return $query = "SELECT * FROM prestamo.cuotaPrestamo WHERE $filtro = $valor";
+				return $query = "SELECT * FROM prestamo.cuotaprestamo WHERE $filtro = $valor";
 			}else{
-				return $query = "SELECT * FROM prestamo.cuotaPrestamo WHERE $filtro = '$valor'";
+				return $query = "SELECT * FROM prestamo.cuotaprestamo WHERE $filtro = '$valor'";
 			}
 		}
 
